@@ -1,11 +1,10 @@
 import {useEffect, useState} from "react";
 import type { TipoPokemon } from "../../types/TipoPokemon.ts";
 
-const URL_API = import.meta.env.VITE_URL_API
+const URL_API: string = import.meta.env.VITE_URL_API
 
 export default function Pokemons() {
     document.title = "Pokemons";
-
     const [pokemons, setPokemons] = useState<TipoPokemon[]>([]);
 
     useEffect(() => {

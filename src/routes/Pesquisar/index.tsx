@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState, FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import type { TipoPokemon } from "../../types/TipoPokemon.ts";
 
 const URL_API: string = import.meta.env.VITE_API_URL;
